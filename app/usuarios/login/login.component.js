@@ -1,20 +1,20 @@
-angular.module('login-aluno')
-    .component('loginAluno',{
+angular.module('login-usuario')
+    .component('loginUsuario',{
         template: `<div class="container d-flex align-items-center justify-content-center" style="min-height: 100vh;">
         <div class="content w-100 form-signin m-auto align-middle">
             <main>
                 <form>
                     <div class="text-center">
-                        <img class="mb-4" src="../assets/img/icons/fitness.png" alt="" width="180" height="180">
+                        <img class="mb-4" src="../assets/img/icons/tattoo-studio.png" alt="" width="180" height="180">
                     </div>
     
                     <div class="form-floating">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput">E-mail</label>
+                        <input type="tel" class="form-control" id="telefoneLoginInput" ng-model="telefoneLoginInput" placeholder="(99) 9 9999-9999">
+                        <label for="telefoneLoginInput">Telefone</label>
                     </div>
                     <div class="form-floating">
-                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                        <label for="floatingPassword">Senha</label>
+                        <input type="password" class="form-control" id="senhaLoginInput" ng-model="senhaLoginInput" placeholder="Password">
+                        <label for="senhaLoginInput">Senha</label>
                     </div>
     
                     <div class="form-check text-start my-3">
@@ -32,5 +32,5 @@ angular.module('login-aluno')
             </main>
         </div>
     </div>`,
-        controller: "loginAlunoController"
+        controller: "loginUsuarioController"
     })

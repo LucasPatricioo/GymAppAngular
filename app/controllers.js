@@ -1,1 +1,1 @@
-angular.module("GymApp");
+angular.module("TattooApp");
